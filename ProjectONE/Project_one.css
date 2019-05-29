@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Spicy+Rice');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    text-align: center;
+    font-family: 'Spicy Rice', cursive;
+    font-size: 100px;
+    text-decoration: underline wavy;
+    letter-spacing: 10px;
+    word-spacing: 8px;
+    color: black;
+
+}
+
+img {
+    height: 50px;
+    width: 50px;
+}
+#text{
+    height:100px;
+}
+
+.form-control,
+.card {
+    background-image: url("notebook.jpg");
+    background-size: cover;
+}
+
+.card-header {
+    background-color: rgba(220, 20, 113, 0.336);
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+    font-variant-caps: small-caps;
+    padding-top: 10px;
+    letter-spacing: 3px;
+}
+
+.card-title {
+    background-color: rgba(128, 255, 0, 0.425);
+    font-size: 14px;
+    text-align: right;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.card-text {
+    font-family: 'Indie Flower', cursive;
+    font-size: 19px;
+    word-spacing: 2px;
+    font-weight: bold;
+}
+
+#add {
+    float: right;
+}
+
+.card {
+    margin: 10px;
+    height: 230px;
+    overflow: auto;
+    -webkit-animation: fadein 1s;
+}
+
+.dispose {
+    margin-top: 7px;
+    width: 20px;
+    height: 20px;
+    float: right;
+    visibility: hidden;
+}
+
+.card-header:hover>.dispose {
+    visibility: visible;
+}
+
+.dispose:hover {
+    cursor: pointer;
+}
